@@ -28,18 +28,18 @@ jobs:
       run: mvn -B compile --file pom.xml
   
   # Jobs do ambiente de homologação
-  build-hmg:    
+  build-hmg:        
+    name: build-hmg - SO ${{matrix.os}}...   
+    runs-on: ${{ matrix.os }}       
+    environment: 
+      name: hmg
+    needs: build-dev    
     strategy:
       matrix:
         # Prepara diversas versões do SO
         os: [ubuntu-latest, macos-latest, windows-latest]  
         # Compila com diversas versões do JDK
         java: [16, 17, 18]        
-    name: build-hmg - SO ${{matrix.os}}...   
-    runs-on: ${{ matrix.os }}   
-    environment: 
-      name: hmg
-    needs: build-dev    
     name: build-hmg - JDK ${{matrix.java}}... 
     steps:
     - name: Realiza o checkout do repositório
