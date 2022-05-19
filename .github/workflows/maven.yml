@@ -29,16 +29,15 @@ jobs:
   
   # Jobs do ambiente de homologação
   build-hmg:        
-    name: build-hmg - SO ${{matrix.os}}...   
+    name: build-hmg - SO ${{ matrix.os }}...   
     runs-on: ${{ matrix.os }}       
     environment: 
       name: hmg
     needs: build-dev    
+    # Prepara diversas versões do SO e do Java
     strategy:
-      matrix:
-        # Prepara diversas versões do SO
+      matrix:        
         os: [ubuntu-latest, macos-latest, windows-latest]  
-        # Compila com diversas versões do JDK
         java: [16, 17, 18]        
     name: build-hmg - JDK ${{matrix.java}}... 
     steps:
