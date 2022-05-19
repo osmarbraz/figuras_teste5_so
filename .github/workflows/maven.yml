@@ -29,7 +29,6 @@ jobs:
   
   # Jobs do ambiente de homologação
   build-hmg:        
-    name: build-hmg - SO ${{ matrix.os }}...   
     runs-on: ${{ matrix.os }}       
     environment: 
       name: hmg
