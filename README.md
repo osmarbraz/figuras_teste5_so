@@ -18,4 +18,5 @@ Pipeline
 - O projeto foi desenvolvido no NetBeans deve ser chamado calculadora_teste.<br>
 - Utiliza o Apache Maven para a automatização da construção.<br>
 - A pasta test contêm os testes unitários do projeto utilizando JUnit 5.<br>
+- Os testes são realizados no SO ubuntu e macos e JDK 16, 17 e 18.<br>
 - A cobertura do código é realizada através do JaCoCo.<br>
