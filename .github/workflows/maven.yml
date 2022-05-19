@@ -36,10 +36,11 @@ jobs:
     needs: build-dev    
     # Prepara diversas versões do SO e do Java
     strategy:
+      fail-fast: false
       matrix:        
-        os: [ubuntu-latest, macos-latest, windows-latest]  
-        java: [16, 17, 18]        
-    
+        #os: [ubuntu-latest, macos-latest, windows-latest]  
+        os: [ubuntu-latest, windows-latest]  
+        java: [16, 17, 18]
     steps:
     - name: Realiza o checkout do repositório
       uses: actions/checkout@v3 
