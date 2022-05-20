@@ -39,7 +39,7 @@ jobs:
       fail-fast: false
       matrix:        
         #os: [ubuntu-latest, macos-latest, windows-latest]  
-        os: [windows-latest]  
+        os: [ubuntu-latest]  
         #java: [16, 17, 18]
         java: [18]
     steps:
@@ -73,8 +73,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths='target/site/jacoco/jacoco.xml' -Dsonar.projectKey=osmarbraz_figuras_teste5_so
       #run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=osmarbraz_figuras_teste5_so
-      run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.organization=osmarbraz -Dsonar.projectKey=osmarbraz_figuras_teste5_so
             
   # Jobs do ambiente de produção
   build-prd:
