@@ -90,9 +90,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       #run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths='target/site/jacoco/jacoco.xml' -Dsonar.projectKey=osmarbraz_figuras_teste5_so
-      run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent 
-      run: mvn -B verify 
-      run: mvn -B sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths='target/site/jacoco/jacoco.xml' -Dsonar.projectKey=osmarbraz_figuras_teste5_so
+      run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths='target/site/jacoco/jacoco.xml' -Dsonar.projectKey=osmarbraz_figuras_teste5_so
+      #run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent 
+      #run: mvn -B verify 
+      #run: mvn -B sonar:sonar -Dsonar.coverage.jacoco.xmlReportPaths='target/site/jacoco/jacoco.xml' -Dsonar.projectKey=osmarbraz_figuras_teste5_so
             
   # Jobs do ambiente de produção
   build-prd:
