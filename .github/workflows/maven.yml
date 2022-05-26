@@ -124,13 +124,14 @@ jobs:
     - name: Empacota o projeto com Maven      
       run: mvn -B package --file pom.xml -DskipTests
     # Cria o artefato de download    
-    - name: Crie uma pasta temporária de downloads de artefatos
+    - name: Crie uma pasta temporária(stating) de downloads de artefatos
       run: mkdir staging
-    - name: Copia os artefatos a serem publicados na pasta temporária
+    - name: Copia os artefatos a serem publicados na pasta temporária(stating)
       run: cp target/*jar-with-dependencies.jar staging
     - name: Usa Upload Artifact do GitHub Action
       uses: actions/upload-artifact@v2
       with:
         # Nome do arquivo a ser gerado
-        name: Package-${{ env.name }}
+        name: Package-${{  matrix.os }} #.zip será adicionado automaticamente
+        # Caminho da pasta temporária (stating)
         path: staging      
