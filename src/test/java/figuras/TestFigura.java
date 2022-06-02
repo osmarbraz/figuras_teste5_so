@@ -5,11 +5,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Testes da Figura")
-public class TestFigura {
+class TestFigura {
 
     @DisplayName("Teste da cor da Figura")
     @Test
-    public void testGetCor() {
+    void testGetCor() {
         String retornoEsperado = "Verde";
         Figura circulo = new Circulo();
         circulo.setCor("Verde");

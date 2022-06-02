@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-public class TestTriangulo {
+class TestTriangulo {
 
     @Test
-    public void testGetArea() {
+    void testGetArea() {
         double altura = 3;
         double base = 2;
         double retornoEsperado = 3.0;
@@ -17,7 +17,7 @@ public class TestTriangulo {
     }
 
     @Test
-    public void testTriangulo() {
+    void testTriangulo() {
         Triangulo triangulo = new Triangulo();
         assertTrue(("".equals(triangulo.getCor()) && triangulo.getAltura() == 0 && triangulo.getBase() == 0));
     }

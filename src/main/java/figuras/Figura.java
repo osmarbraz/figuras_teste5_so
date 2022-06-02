@@ -4,7 +4,7 @@ public abstract class Figura {
 
     private String cor;
 
-    public Figura(String cor) {
+    protected Figura(String cor) {
         this.cor = cor;
     }
 

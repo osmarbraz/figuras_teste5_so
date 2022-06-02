@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-public class TestCirculo {
+class TestCirculo {
     
     @Test    
-    public void testGetArea() {
+    void testGetArea() {
         double lado = 5;
         double retornoEsperado = 78.53750000000001;
         Circulo circulo = new Circulo("", lado);
@@ -16,7 +16,7 @@ public class TestCirculo {
     }
 
     @Test
-    public void testCirculo() {
+    void testCirculo() {
         Circulo circulo = new Circulo();
         assertTrue(("".equals(circulo.getCor()) && circulo.getRaio() == 0.0));
     }

@@ -21,7 +21,8 @@ public class Quadrado extends Figura {
         return lado;
     }
 
+    @Override
     public double getArea() {
-        return ((getLado() * getLado()));
+        return (getLado() * getLado());
     }
 }

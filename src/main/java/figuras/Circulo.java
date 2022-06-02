@@ -3,6 +3,8 @@ package figuras;
 public class Circulo extends Figura {
 
     private double raio;
+    
+    private static final double PI = 3.1415;
 
     public Circulo() {
         this("", 0);
@@ -21,8 +23,8 @@ public class Circulo extends Figura {
         return raio;
     }
 
-    public double getArea() {
-        double PI = 3.1415;
-        return ((PI * getRaio() * getRaio()));
+    @Override
+    public double getArea() {        
+        return (PI * getRaio() * getRaio());
     }
 }

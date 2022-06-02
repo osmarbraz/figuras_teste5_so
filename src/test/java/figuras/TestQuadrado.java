@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-public class TestQuadrado {
+class TestQuadrado {
 
     @Test
-    public void testGetArea() {
+    void testGetArea() {
         double lado = 4;
         double retornoEsperado = 16.0;
         Quadrado quadrado = new Quadrado("", lado);
@@ -16,7 +16,7 @@ public class TestQuadrado {
     }
 
     @Test
-    public void testQuadrado() {
+    void testQuadrado() {
         Quadrado quadrado = new Quadrado();
         assertTrue(("".equals(quadrado.getCor()) && quadrado.getLado() == 0));
     }
