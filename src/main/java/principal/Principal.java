@@ -1,3 +1,5 @@
+package principal;
+
 
 import figuras.Circulo;
 import figuras.Quadrado;
@@ -66,6 +68,9 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Área Circulo: " + circulo.getArea());
                     break;
                 }
+                default:
+                    JOptionPane.showMessageDialog(null, "Alternativa inválida!");
+                    break;
             }
         }
     }
