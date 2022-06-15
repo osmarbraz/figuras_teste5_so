@@ -68,6 +68,10 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Área Circulo: " + circulo.getArea());
                     break;
                 }
+                case "9": {
+                    JOptionPane.showMessageDialog(null, "Saindo do sistema.");
+                    break;
+                }
                 default:
                     JOptionPane.showMessageDialog(null, "Alternativa inválida!");
                     break;
