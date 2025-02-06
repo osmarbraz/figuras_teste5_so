@@ -1,4 +1,4 @@
-[![Github Actions Status for osmarbraz/figuras_teste5](https://github.com/osmarbraz/figuras_teste5_so/workflows/Integra%C3%A7%C3%A3o%20continua%20de%20Java%20com%20Maven/badge.svg)](https://github.com/osmarbraz/figuras_teste5_so/actions) 
+[![Github Actions Status for osmarbraz/figuras_teste5_so](https://github.com/osmarbraz/figuras_teste5_so/workflows/Integra%C3%A7%C3%A3o%20continua%20de%20Java%20com%20Maven/badge.svg)](https://github.com/osmarbraz/figuras_teste5_so/actions) 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_figuras_teste5_so&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=osmarbraz_figuras_teste5_so)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=osmarbraz_figuras_teste5_so&metric=coverage)](https://sonarcloud.io/component_measures?id=osmarbraz_figuras_teste5_so&metric=coverage)
 
